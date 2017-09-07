@@ -8,26 +8,49 @@
         android:allowBackup="true"
         android:icon="@drawable/app_logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".basic.StartupActivity">
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".basic.StartupActivity" />
+        <activity android:name=".basic.SignUpActivity" />
+        <activity android:name=".basic.UserActivity" />
+        <activity android:name=".basic.MainActivity" />
+        <activity android:name=".basic.ListOfConfActivity" />
+        <activity android:name=".basic.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".basic.SignUpActivity" />
-        <activity android:name=".basic.UserActivity" />
-        <activity android:name=".basic.MainActivity" />
-        <activity android:name=".basic.ListOfConfActivity" />
-        <activity android:name=".basic.LoginActivity" />
         <activity
             android:name=".basic.ConferenceActivity"
             android:label="@string/title_activity_conference"
-            android:theme="@style/AppTheme" />
-        <activity android:name=".basic.VolunteerActivity"></activity>
+            />
+        <activity android:name=".basic.VolunteerActivity" />
+        <activity android:name=".basic.ass_stud"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".basic.Main2Activity" />
+        </activity>
+        <activity android:name=".basic.ins_study"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".basic.Main2Activity" />
+        </activity>
+        <activity
+            android:name=".basic.Main2Activity"
+            />
+        <activity
+            android:name=".basic.stud_detail"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".basic.Main3Activity" />
+        <activity android:name=".basic.vol_dut">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".basic.Main3Activity" />
+        </activity>
     </application>
 
 </manifest>
