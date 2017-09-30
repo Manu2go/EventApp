@@ -39,6 +39,7 @@ public class SignUpActivity extends Activity {
     EditText inputEmail;
     EditText inputPassword;
     EditText inputConfirmPassword;
+    EditText username;
     Button btnRegister;
     ImageView chechConfirm;
     boolean check;
@@ -54,7 +55,7 @@ public class SignUpActivity extends Activity {
         setContentView(R.layout.activity_sign_up);
 
 
-
+        username=(EditText)findViewById(R.id.username);
         inputName=(EditText) findViewById(R.id.name);
         inputMobileno=(EditText) findViewById(R.id.mobile);
         inputSpecialization=(EditText) findViewById(R.id.specialization);
@@ -139,9 +140,10 @@ public class SignUpActivity extends Activity {
                                 String mobile_no = inputMobileno.getText().toString();
                                 String email = inputEmail.getText().toString();
                                 String specialization=inputSpecialization.getText().toString();
+                                String usernam=username.getText().toString();
                                 String type = "signup";
                                 backGroundWorker backgroundWorker = new backGroundWorker(getApplicationContext(),SignUpActivity.this);
-                                backgroundWorker.execute(type, name,mobile_no,specialization,email,password);
+                                backgroundWorker.execute(type, name,mobile_no,specialization,email,password,usernam);
                             }
                         }
 

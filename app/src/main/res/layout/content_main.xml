@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".basic.Main2Activity">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scroll"
+        android:layout_centerInParent="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/profile">
+                <ImageView
+                    android:layout_width="165dp"
+                    android:layout_height="165dp"
+                    android:id="@+id/imag"
+                    android:src="@drawable/user"
+
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/imag"
+                    android:text="Your Profile"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Name"
+                android:id="@+id/name"
+                android:layout_alignParentStart="true"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/name1"
+                android:hint="Name"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/colorPrimary"
+                android:drawableRight="@drawable/last_name"
+                />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary" />
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile"
+                android:id="@+id/mobile"
+                android:layout_alignParentStart="true"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mobile1"
+                android:hint="Mobile"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/colorPrimary"
+                android:drawableRight="@drawable/mobile"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-Mail"
+                android:id="@+id/email"
+                android:layout_alignParentStart="true"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email1"
+                android:hint="E-Mail"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/colorPrimary"
+                android:drawableRight="@drawable/email"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -226,6 +226,7 @@ public class UserActivity extends AppCompatActivity {
                         SharedPreferences sharedPreferences = getSharedPreferences("loggedIn info", Context.MODE_PRIVATE);
                         SharedPreferences.Editor editor = sharedPreferences.edit();
                         editor.putString("name", "");
+                        editor.putString("uid", "0");
                         editor.apply();
                         startActivity(new Intent(UserActivity.this, LoginActivity.class));
                         drawer.closeDrawers();
