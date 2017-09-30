@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New RadioButton"
+        android:id="@+id/duty_nt_ass_name"
+        android:layout_gravity="right"
+        android:checked="false"
+        />
+
+</LinearLayout>
